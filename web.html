@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THPTedu</title>
+    <link rel="stylesheet" href="styles.css">
+    <style> 
+      body {
+    font-family: Helvetica;
+    margin: 10px;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 23px;
+}
+.header{background-color: lightgrey;}
+.banner {
+    background-image: url("gra1.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    height: 70%;
+    width: 80;
+    
+    color: darkred;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center !important;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #e67676;
+    padding: 0.5em;
+    color: rgb(rgb(47, 112, 187), green, blue);
+    display: flex; 
+    justify-content: space-evenly; /* Chia khoảng cách đều giữa các mục */
+    width: 100%;
+    
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a:hover {
+    background-color: #f0a4a4;
+    color: #261614;
+    border-radius: 2px;
+    transform: scale(1.5);
+}  
+nav a {
+    text-decoration: none;
+    color: #151212;
+    font-weight: bold;
+    font-size: 17px;
+}
+.slogan {
+  background-color: rgb(255, 255, 255) !important;
+  text-align: center !important;
+  width: 100%;
+  padding: 7rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  box-sizing: border-box;
+  box-shadow: #1d1d1d;
+}
+
+.row {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 0 7rem;
+  width: 100%;
+  gap: 1rem;
+  box-sizing: border-box;
+  
+}
+ .slogan h2, .row h3 {font-size: 20px;}
+ .slogan p, .row p{ font-size: 17px;}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 30px;
+}
+
+.text-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(120, 116, 116, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  min-height: 300px;
+}
+
+.text-card:hover {
+  transform: scale(1.02);
+}
+
+.text-card .text,
+.text-card .image {
+  width: 50%;
+  height: 100%;
+}
+
+.text-card .text {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-card .text h1 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: darkred;
+}
+
+.text-card .text p {
+  font-size: 17px;
+  color: #1d1d1d;
+}
+
+.text-card .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-card .image img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+h2 {color:darkred;}
+.container {
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size:1em;
+
+}
+footer {
+    
+    margin-top: 20px;
+    padding: 1em;
+    background-color: #e67676;
+    color: rgb(42, 40, 40);
+    font-size: 15px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Chào mừng các bạn học sinh lớp 12!</h1>
+        </div>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#thong-tin-chung">Thông tin </a></li>
+            <li><a href="#tai-lieu-hoc-tap">Tin tức</a></li>
+            <li><a href="#huong-nghiep">Hợp tác</a></li>
+            <li><a href="#lien-he">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <div class="slogan">
+        <div class="row">
+          <div class="block_3">
+            <h2>Tiết kiệm</h2>
+            <p class="text-content"> Mọi thông tin được tổng hợp trên đây, hỗ trợ học sinh, phụ huynh và giáo viên sử dụng</p>
+          </div>
+          <div class="block_3">
+            <h2>Uy tín</h2>
+            <p class="text-content"> Thông tin được trích dẫn từ các nguồn uy tín, chính thống và được Bộ Giáo dục cung cấp</p>
+          </div>
+          <div class="block_3">
+            <h2>Dễ thao tác</h2>
+            <p class="text-content"> Trang web được thiết kế dễ nhìn, bắt mắt nhằm giúp học sinh, phụ huynh và giáo viên dễ sử dụng</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="grid">
+      <a href="WEB FOOD.html" class="card-link">
+        <div class="text-card" style="grid-column: span 2">
+          <div class="text">
+            <h1>Thông tin</h1>
+            <p>Đây là nền tảng học tập trực tuyến được thiết kế riêng cho học sinh lớp 12 - nơi bạn có thể tìm thấy tài liệu học tập chất lượng, đề thi thử, bí quyết ôn thi THPT Quốc gia, cùng nhiều kiến thức bổ ích khác. Với nội dung bám sát chương trình chuẩn của Bộ Giáo dục và Đào tạo, chúng tôi mong muốn đồng hành cùng bạn trong chặng đường chinh phục kỳ thi quan trọng sắp tới.</p>
+          </div>
+          <div class="image">
+            <img src="infor.jpg" alt="thong-tin">
+          </div>
+        </div>
+      </a>
+    </div>
+      <a href="https://drive.google.com/drive/folders/1r3vQRE9YDYNL_XwQdzoG_4VJg0a4Hluz?usp=sharing" target="_blank"  class="card-link">
+        <div class="text-card" style="grid-column: span 2">
+          <div class="text">
+            <h1>Tài liệu học tập</h1>
+            <p>Chào mừng bạn đến với mục Tài liệu học tập – nơi tổng hợp và chia sẻ những nguồn tài nguyên học thuật giá trị, được biên soạn và chọn lọc kỹ lưỡng nhằm hỗ trợ tối đa cho quá trình học tập, nghiên cứu và phát triển kỹ năng của bạn.</br>
+
+              Tại đây, bạn sẽ tìm thấy đa dạng các loại tài liệu như: giáo trình điện tử, bài giảng chi tiết, slide thuyết trình, đề cương môn học, tài liệu tham khảo chuyên sâu, cũng như các bài tập và đề thi từ cơ bản đến nâng cao. Tất cả đều được phân loại theo từng môn học hoặc chủ đề, giúp bạn dễ dàng tìm kiếm và tiếp cận thông tin một cách nhanh chóng và hiệu quả.</p>
+          </div>
+          <div class="image">
+            <img src="HỌC TẬP.jpg" alt="hoc-tap">
+          </div>
+        </div>
+      </a>
+  
+      <a href="https://viethanbd.edu.vn/home/tu-van-nghe-nghiep/Nhung-loi-khuyen-danh-cho-cac-ban-hoc-sinh-trong-v-1848.html" target="_blank" class="card-link">
+        <div class="text-card" style="grid-column: span 2">
+          <div class="text">
+            <h1>Hướng Nghiệp</h1>
+            <p>Tại đây, bạn sẽ tìm thấy các bài viết chuyên sâu về định hướng nghề nghiệp, thông tin thị trường lao động, xu hướng việc làm, cũng như lời khuyên từ các chuyên gia trong nhiều lĩnh vực khác nhau. Ngoài ra, mục Hướng nghiệp còn cung cấp các bài test tính cách – sở thích nghề nghiệp, hướng dẫn viết CV, chuẩn bị phỏng vấn, và chia sẻ kinh nghiệm thực tế từ những người đi trước.</br>
+
+              Dù bạn đang là học sinh, sinh viên hay người đang tìm kiếm một hướng đi mới, chúng tôi mong rằng những nội dung tại đây sẽ giúp bạn tự tin hơn trong việc đưa ra các quyết định nghề nghiệp, phát huy điểm mạnh của bản thân và nắm bắt cơ hội phù hợp.</p>
+          </div>
+          <div class="image">
+            <img src="daihoc.jpg" alt="huong-nghiep">
+          </div>
+        </div>
+      </a>
+    <p style="font-size: 20px;">Quay lại đầu trang <a href="WEB FOOD.html">TẠI ĐÂY</a></p>
+
+    <footer>
+        <div>
+            <h2>Liên hệ</h2>
+            <p>Nếu các bạn có bất kỳ câu hỏi hay thắc mắc nào, đừng ngần ngại liên hệ với chúng tôi qua thông tin dưới đây:</p>
+            <p>Email: chauvanliem.edu.vn</p>
+            <p>Điện thoại: 0123 456 789</p>
+            </div>
+        <p>&copy; 2025 Trang Web Dành Cho Học Sinh Lớp 12</p>
+    </footer>
+</body>
+</html>
